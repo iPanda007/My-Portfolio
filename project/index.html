@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<div class="website-loader" style="width: 100%;height: 100vh;position: absolute;background: white; display: flex;align-items: center;justify-content: center;z-index: 2002" >
+    <div class="loader"></div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.5/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/venobox/venobox.min.css">
+    <link rel="stylesheet" href="vendor/animate-style/animate.min.css">
+    <link rel="stylesheet" href="css/style-min.css">
+    <style>
+        .loader {
+            color: #F24EF9;
+            font-size: 90px;
+            text-indent: -9999em;
+            overflow: hidden;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            margin: 72px auto;
+            position: relative;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+            animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+        }
+        @-webkit-keyframes load6 {
+            0% {
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+            5%,
+            95% {
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+            10%,
+            59% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+            }
+            20% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+            }
+            38% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+            }
+            100% {
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+        }
+        @keyframes load6 {
+            0% {
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+            5%,
+            95% {
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+            10%,
+            59% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+            }
+            20% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+            }
+            38% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+            }
+            100% {
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+        }
+        @-webkit-keyframes round {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes round {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="container-fluid overflow-hidden position-relative bg ">
+        <div class="w-75   " style="position: absolute; top:-50px;left: -150px;background:rgba(255, 160, 122,0.4);filter: blur(120px);height: 50vh;"></div>
+        <div class="w-50   " style="position: absolute; top:-50px;right: -150px;background:rgba(242, 78, 249, 0.29);filter: blur(120px);height: 50vh;"></div>
+<!--        <div class="w-50   " style="position: absolute; bottom:-200px;right: 300px;background:rgb(255, 250, 205);filter: blur(120px);height: 50vh;"></div>-->
+        <div class=" row align-items-center vh-100 bg-one " >
+            <div class="">
+                <div class="square" style="--i:0" ></div>
+                <div class="square"  style="--i:1" ></div>
+                <div class="square" style="--i:2" ></div>
+                <div class="square" style="--i:3" ></div>
+                <div class="square" style="--i:4" ></div>
+                <div class="square" style="--i:5" ></div>
+                <div class="square" style="--i:6" ></div>
+                <div class="square" style="--i:7" ></div>
+                <div class="square" style="--i:9" ></div>
+                <div class="square" style="--i:10" ></div>
+              </div>
+            <div class="container p-md-0  ">
+               <div class="row">
+                <div class="col-12 nav-parent p-0 ">
+                    <nav class="wow animate__fadeIn">
+                        <h4>MI^_^MI</h4>
+                        <ul class="nav-link">
+                            <li ><a href="#home" class="nav-one active link-item">Home</a></li>
+                            <li><a href="#about" class="nav-two link-item">About</a></li>
+                            <li><a href="#service" class="nav-three link-item">Service</a></li>
+                            <li><a href="#portfolio" class="nav-four link-item">Portfolio</a></li>
+                            <li><a href="#contact" class="nav-five link-item ">Contact</a></li>
+                        </ul>
+
+                        <div class="hamburger">
+                       <span></span>
+                        </div>
+                    </nav>
+
+                </div>
+               </div>
+                <div class=" row glass " id="glass" >
+
+
+                   <!-- nav end -->
+<!--          Home section start-->
+                    <section class="home-reverse " id="home" style="width: 100%">
+                         <div class="col-12 col-md-12 col-lg-6 ">
+                             <div class="px-md-1  p-2">
+                                 <h4 class="light-text mb-lg-4 text-center text-lg-left wow animate__fadeInRightBig animation-one ">Hello,</h4>
+
+                                 <div class="wrapper wow animate__fadeIn animation-four">
+                                     <div class="static-text mr-2">I'm </div>
+                                     <ul class="dynamic-text">
+                                         <li><span class="typing"></span></li>
+
+                                     </ul>
+                                 </div>
+                                 <p class="light-text mb-lg-4 text-center text-lg-left wow animate__fadeInRightBig animation-three">Web,Mobile and UI/Ux Desinger</p>
+                             </div>
+                             <div class="mobile wow animate__fadeInRightBig animation-four">
+                                 <div class="text-box m-auto m-lg-0">
+                                     <a href="">Portfolio</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-12 col-md-12 col-lg-6 ">
+                             <div class="square-1 wow animate__fadeInDown animation-Six "style="--i:8;">
+                                 <div class="user"  >
+                                     <img src="img/user.jpg" style="width: 100%;border-radius: 50%;filter: contrast(140%)" alt="" >
+                                 </div>
+                             </div>
+
+                         </div>
+
+                        <div class="mouse  ">
+                            <div class="mouse-item wow animate__bounce animation-seven animate__infinite ">
+
+                                <a href="#about" >    <img src="img/mouse.svg"class="mouse-icon" alt=""></a>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Home end -->
+                <!-- about-section-start -->
+                           <div class="col-12">
+                                <section class="about-section section" id="about">
+                                    <h2 class="text-center  wow animate__fadeInRightBig animation-one ">About me </h2>
+                                    <div class="skill ">
+                                        <div class="img-box wow animate__fadeInLeftBig animation-two ">
+                                            <div class="img-inner  ">
+                                                <img src="img/user-3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                      <div class="row">
+                                          <div class=" col-12 ">
+                                              <div class="content">
+                                                  <div class="myself">
+                                                      <h5 class="wow animate__fadeInLeft animation-two">Web Developer</h5>
+                                                      <p class="wow animate__fadeInLeft animation-three">FrontEnd Web Development Html, Css, JavaScript, jQuery, BootStrap, Vue.js, Chart.js, WOW.js, Git Other JS Library.</p>
+                                                      <h5 class="wow animate__fadeInLeft animation-four">Education</h5>
+                                                      <p class="wow animate__fadeInLeft animation-five">Chemistry(Fourth Year)Distance Education (East Yangon University)</p>
+                                                       <h5 class="wow animate__fadeInLeft animation-Six">Other Qualitification</h5>
+                                                      <p class="wow animate__fadeInLeft animation-seven">Diploma in Information Technology since( 2018 ). More Details To down load the CV. </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                       <div class="textBoxParent text-center wow animate__backInUp animation-eight">
+                                        <div class="text-box">
+                                            <a href="">Download CV</a>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </section>
+                           </div>
+                        <!-- about-section-end -->
+                    <div class="col-12">
+                        <section class="section service-section" id="service">
+                            <h2 class="text-center wow animate__backInDown animation-ten">Service</h2>
+                     <div class="">
+                         <div class="row slide-section">
+
+                             <div class="col-12 col-md-6 col-lg-4 col-xl-3  p-0">
+                                 <div class="card-skill p-4 wow animate__fadeInLeft animation-four">
+
+                                     <div class="skill-progress">
+                                         <div class="outer">
+                                             <div class="inner">
+                                                 <div id="number" class="counting">
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                             <defs>
+                                                 <linearGradient id="GradientColor">
+                                                     <stop offset="0%" stop-color="#e91e63" />
+                                                     <stop offset="100%" stop-color="#673ab7" />
+                                                 </linearGradient>
+                                             </defs>
+                                             <circle  class="circleOne" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                         </svg>
+                                     </div>
+                                     <div class="card-skill-one mt-5  ">
+                                         <h5 class="">Html,</h5>
+                                         <p class="opacity" style="font-size: 14px; opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, maxime!</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                 <div class="card-skill p-4 wow animate__fadeInDown animation-four">
+
+                                     <div class="skill-progress">
+                                         <div class="outer">
+                                             <div class="inner">
+                                                 <div id="numberOne" class="counting">
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                             <defs>
+                                                 <linearGradient id="GradientColor">
+                                                     <stop offset="0%" stop-color="#e91e63" />
+                                                     <stop offset="100%" stop-color="#673ab7" />
+                                                 </linearGradient>
+                                             </defs>
+                                             <circle  class="circleTwo" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                         </svg>
+                                     </div>
+                                     <div class="card-skill-one mt-5  ">
+                                         <h5 class="">CSS,</h5>
+                                         <p class="opacity" style="font-size: 14px; opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, maxime!</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                 <div class="card-skill p-4 wow animate__fadeInUp animation-four">
+
+                                     <div class="skill-progress">
+                                         <div class="outer">
+                                             <div class="inner">
+                                                 <div id="numberTwo" class="counting">
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                             <defs>
+                                                 <linearGradient id="GradientColor">
+                                                     <stop offset="0%" stop-color="#e91e63" />
+                                                     <stop offset="100%" stop-color="#673ab7" />
+                                                 </linearGradient>
+                                             </defs>
+                                             <circle  class="circleThree" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                         </svg>
+                                     </div>
+                                     <div class="card-skill-one mt-5  ">
+                                         <h5 class="">JavaScript,</h5>
+                                         <p class="opacity" style="font-size: 14px; opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, maxime!</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                 <div class="card-skill p-4 wow animate__fadeInRight animation-four">
+
+                                     <div class="skill-progress">
+                                         <div class="outer">
+                                             <div class="inner">
+                                                 <div id="numberThree" class="counting">
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                             <defs>
+                                                 <linearGradient id="GradientColor">
+                                                     <stop offset="0%" stop-color="#e91e63" />
+                                                     <stop offset="100%" stop-color="#673ab7" />
+                                                 </linearGradient>
+                                             </defs>
+                                             <circle  class="circleFour" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                         </svg>
+                                     </div>
+                                     <div class="card-skill-one mt-5  ">
+                                         <h5 class="">jQuery,</h5>
+                                         <p class="opacity" style="font-size: 14px; opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, maxime!</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                 <div class="card-skill p-4 wow animate__zoomIn animation-ten">
+                                     <div class="skill-progress">
+                                         <div class="outer">
+                                             <div class="inner">
+                                                 <div id="numberFour" class="counting">
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                             <defs>
+                                                 <linearGradient id="GradientColor">
+                                                     <stop offset="0%" stop-color="#e91e63" />
+                                                     <stop offset="100%" stop-color="#673ab7" />
+                                                 </linearGradient>
+                                             </defs>
+                                             <circle  class="circleFive" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                         </svg>
+                                     </div>
+                                     <div class="card-skill-one mt-5  ">
+                                         <h5 class="">Bootstrap,</h5>
+                                         <p class="opacity" style="font-size: 14px; opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, maxime!</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                 <div class="card-skill p-4 wow animate__zoomIn animation-ten">
+
+                                     <div class="skill-progress">
+                                         <div class="outer">
+                                             <div class="inner">
+                                                 <div id="numberFive" class="counting">
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                             <defs>
+                                                 <linearGradient id="GradientColor">
+                                                     <stop offset="0%" stop-color="#e91e63" />
+                                                     <stop offset="100%" stop-color="#673ab7" />
+                                                 </linearGradient>
+                                             </defs>
+                                             <circle  class="circleSix" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                         </svg>
+                                     </div>
+                                     <div class="card-skill-one mt-5  ">
+                                         <h5 class="">Vue.Js,</h5>
+                                         <p class="opacity" style="font-size: 14px; opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, maxime!</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                 <div class="card-skill p-4 wow animate__zoomIn animation-ten">
+
+                                     <div class="skill-progress">
+                                         <div class="outer">
+                                             <div class="inner">
+                                                 <div id="numberSix" class="counting">
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                             <defs>
+                                                 <linearGradient id="GradientColor">
+                                                     <stop offset="0%" stop-color="#e91e63" />
+                                                     <stop offset="100%" stop-color="#673ab7" />
+                                                 </linearGradient>
+                                             </defs>
+                                             <circle  class="circleSeven" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                         </svg>
+                                     </div>
+                                     <div class="card-skill-one mt-5  ">
+                                         <h5 class="">Chart.Js,</h5>
+                                         <p class="opacity" style="font-size: 14px; opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, maxime!</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                 <div class="card-skill p-4 wow animate__zoomIn animation-ten">
+
+                                     <div class="skill-progress">
+                                         <div class="outer">
+                                             <div class="inner">
+                                                 <div id="numberSeven" class="counting">
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                             <defs>
+                                                 <linearGradient id="GradientColor">
+                                                     <stop offset="0%" stop-color="#e91e63" />
+                                                     <stop offset="100%" stop-color="#673ab7" />
+                                                 </linearGradient>
+                                             </defs>
+                                             <circle  class="circleEight" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                         </svg>
+                                     </div>
+                                     <div class="card-skill-one mt-5  ">
+                                         <h5 class="">Git,</h5>
+                                         <p class="opacity" style="font-size: 14px; opacity: 0.8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, maxime!</p>
+                                     </div>
+                                 </div>
+                             </div>
+
+                         </div>
+                     </div>
+                        </section>
+                    </div>
+<!--                       portfolio section start-->
+                    <div class="col-12">
+                        <section class="section portfolio-section   " id="portfolio">
+                            <h2 class="text-center wow animate__fadeInDown animation-ten">Portfolio</h2>
+
+                             <div class="row">
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                     <div class="panel wow animate__fadeInLeft animation-four">
+                                         <a href="img/text-website.png" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/text.gif" class="panel-item-img" alt="">
+                                         </a>
+                                         <h4>Text-Animation</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                     <div class="panel wow animate__fadeInDown animation-four">
+                                         <a href="img/facebook.png" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/facebook.png" class="panel-item-img" alt="">
+                                         </a>
+                                           <h4>FaceBook-Clone</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                     <div class="panel wow animate__fadeInUp animation-four">
+                                         <a href="img/light-dashboard.png" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/light-dashboard.png" class="panel-item-img" alt="">
+                                         </a>
+                                         <h4>Dashboard</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInRight animation-four">
+                                         <a href="img/travel.jpg" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/travel-cut.png" class="panel-item-img" alt="">
+                                         </a>
+                                         <h4>Travel-Web</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInRight animation-four">
+                                         <a href="img/foddie-project.png" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/circle-2%20(2).png" class="panel-item-img" alt="">
+                                         </a>
+                                    <h4>Foodie_Design</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInUp animation-four">
+                                         <a href="img/dark-dashboard.png" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/dark-dashboard.png" class="panel-item-img" alt="">
+                                         </a>
+                                         <h4>Dark-Mode</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInDown animation-four">
+                                         <a href="img/profile-project.png" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/profile-web.png" class="panel-item-img" alt="">
+                                         </a>
+                                      <h4>Profile-Design</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInLeft animation-four">
+                                         <a href="img/Car-one.png" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/Car-one.png" class="panel-item-img" alt="">
+                                         </a>
+                                         <h4>Car-Design</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInLeft animation-four">
+                                         <a href="img/Baby.png" class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/BossBaby.png" class="panel-item-img" alt="">
+                                         </a>
+                                   <h4>Boss-Baby</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInDown animation-four" >
+                                         <a href="img/car.png " class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/car.png" class="panel-item-img" alt="">
+                                         </a>
+                                         <h4>Game_UI</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInUp animation-four">
+                                         <a href="img/me-profile.png " class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/me-profile.png" class="panel-item-img" alt="">
+                                         </a>
+                                         <h4>Glassmorphism</h4>
+                                     </div>
+                                 </div>
+                                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 ">
+                                     <div class="panel wow animate__fadeInRight animation-four">
+                                         <a href="img/to-do.png " class="panel-item venobox" data-gall="myGallery">
+                                             <img src="img/to-do.png" class="panel-item-img" alt="">
+                                         </a>
+                                         <h4>To-Do-List</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                        </section>
+                    </div>
+<!--                    portfolio section end-->
+
+<!--                    contact-section-Start-->
+                    <div class="col-12">
+                        <section class="section contact-section " id="contact">
+                            <h2 class="text-center wow animate__fadeInDown animation-ten">Contact me</h2>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="contact-form mb-3 wow animate__fadeInLeft animation-Six">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Name" required class="input-control">
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Email" required class="input-control">
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Subject" required class="input-control">
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Name" required class="input-control">
+                                                </div>
+                                                <div class="input-group">
+                                                    <textarea name="" placeholder="message" class="input-control" required id="" ></textarea>
+                                                </div>
+                                                <div class="submit-btn">
+                                                    <button type="submit" class="btn" style="color:var(--primary)">send message</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex align-items-center p-0">
+                                    <div class="contact-info wow animate__fadeInRight animation-eight">
+                                        <div class="contact-info-item">
+                                            <h3>Email</h3>
+                                            <p>aungkyawkhaing@gmail.com</p>
+                                        </div>
+                                        <div class="contact-info-item">
+                                            <h3>Phone</h3>
+                                            <p>09,966928899</p>
+                                        </div>
+                                        <div class="contact-info-item">
+                                            <h3>Follow Me</h3>
+                                            <div class="social-Links">
+                                                <a href="#" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                                                <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
+                                                <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+                </div>
+            </div>
+
+        </div>
+      </div>
+        
+    </section>
+
+<script src="vendor/jQuery/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="vendor/bootstrap-4.5/js/bootstrap.bundle.js"></script>
+    <script src="vendor/way%20point/jquery.waypoints.js"></script>
+    <script src="vendor/counterup/jquery.counterup.js"></script>
+    <script src="vendor/wow-js/wow.js"></script>
+    <script src="vendor/smoth-scroll/smooth-scroll.polyfills.js"></script>
+    <script src="vendor/slick/slick.js"></script>
+    <script src="vendor/venobox/venobox.min.js"></script>
+<script src="js/app.js"></script>
+    <script>
+        wow = new WOW(
+            {
+            scrollContainer: '.glass',
+                boxClass:     'wow',      // default
+                animateClass: 'animate__animated ', // default
+                offset:       +100,          // default
+                mobile:       true,       // default
+                live:         true        // default
+            }
+        )
+        wow.init();
+        $(".slide-section").slick({
+
+            centerPadding: '60px',
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+
+                        centerPadding: '60px',
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 995,
+                    settings: {
+
+                        centerPadding: '60px',
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+
+                {
+                    breakpoint: 780,
+                    settings: {
+
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+
+
+                {
+                    breakpoint: 600,
+                    settings: {
+
+                        centerPadding: '60px',
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $(document).ready(function(){
+            $('.venobox').venobox();
+        });
+    </script>
+</body>
+</html>
